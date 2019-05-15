@@ -1,0 +1,7 @@
+{
+    "CoreAPIBaseUrl" : "https://sandbox-api.bqecore.com/api",
+    "CoreIdentityBaseUrl" : "https://sandbox-api-identity.bqecore.com/idp",    
+    "ClientID" : "Enter APP ClientID Here",
+    "RedirectURI" : "Enter APP RedirectURI Here",
+    "Scopes" : "read:core readwrite:core openid" 
+}

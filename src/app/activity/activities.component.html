@@ -1,0 +1,33 @@
+
+  <div style="text-align:center">
+    <h2>{{ title }}</h2>
+    <h4 title="Company">{{ userInfo.company }}</h4>  
+    <form>
+       <input type="button" class="btn btn-danger" name="btnDisconnectFromCore" id="btnDisconnectFromCore" value="Disconnect from Core" (click) = "disconnectFromCore()" />
+    </form>
+  </div>
+
+  <div style="text-align:right">
+      <a class="btn btn-primary" role="button" routerLink = "/activity">Create Activity</a>   
+   </div>
+
+  <h3>Activities List</h3>
+  <table style="margin:20 0 20 0" class="table table-striped" *ngIf = "activities">
+    <thead style="background: #000; color: #fff; line-height: 39px">
+      <th>Code</th>
+      <th>Description</th>
+      <th>Billable</th>
+      <th>Bill Rate</th>
+      <th>Cost Rate</th> 
+      <th></th>                  
+   </thead>
+    <tr style="cursor:pointer" *ngFor="let activity of activities">
+      <td [routerLink]="['/activity', activity.id]">{{activity.code}}</td>
+      <td [routerLink]="['/activity', activity.id]">{{activity.description}}</td>
+      <td [routerLink]="['/activity', activity.id]">{{activity.billable == 1 ? 'true' : 'false'}}</td>
+      <td [routerLink]="['/activity', activity.id]">{{activity.billRate}}</td>
+      <td [routerLink]="['/activity', activity.id]">{{activity.costRate}}</td>
+      <td (click) = "deleteActivity(activity)">Delete</td>
+    </tr>
+  </table>
+  <div *ngIf = "! activities" style="text-align:center;padding-top: 20px;">Loading...</div>
