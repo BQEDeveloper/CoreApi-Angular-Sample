@@ -13,10 +13,12 @@ export class ActivityComponent implements OnInit {
     private activityService: ActivityService,
     private activatedRoute: ActivatedRoute,
     private router: Router
-  ) {
+  ) { }
+
+  ngOnInit() { 
     try {
       const id = this.activatedRoute.snapshot.params.id;
-      if(id) {
+      if (id) {
         this.getActivity(id);
       } else {
         this.activity = new ActivityModel();
@@ -26,8 +28,6 @@ export class ActivityComponent implements OnInit {
       throw new Error(ex);
     }
   }
-
-  ngOnInit() { }
 
   getActivity(id: string): void {
     try {
