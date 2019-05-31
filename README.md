@@ -1,6 +1,6 @@
 # Angular Sample App
 
- A sample app demonstrating OAuth 2.0 and other features using Core API.This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+ A sample app demonstrating OAuth 2.0 and other features using Core API. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
 ## Getting Started
   1. Clone the Core Angular Sample project on your local environment.
