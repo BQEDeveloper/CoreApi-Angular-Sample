@@ -5,7 +5,7 @@
 ## Getting Started
   1. Clone the Core Angular Sample project on your local environment.
   2. Go to Config.json, insert the  client_id and redirect_uri of you app. Please note the redirect_uri should point to the index.html        file of the project e.g. if you are running Angular app on your localhost with port 4200, the redirectURI might look something like       http://localhost:4200/
-  3. Run npm install and then npm serve to start the app
+  3. Run npm install and then npm start to run the app
 
 ### What is supported?
   1. Authorization 
