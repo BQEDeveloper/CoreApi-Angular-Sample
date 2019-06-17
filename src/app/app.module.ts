@@ -15,6 +15,7 @@ import { IndexComponent } from './index.component';
 import { ActivitiesComponent } from './activity/activities.component';
 import { UserInfoService } from './shared/services/UserInfoManager.service';
 import { ActivityComponent } from './activity/activity.component';
+import { JWTService } from './shared/services/JWT.service';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ActivityComponent } from './activity/activity.component';
   providers: [
     ActivityService,
     AuthService,
+    JWTService,
     APIHelperService,
     UserInfoService,
     GeneralMethodsService
