@@ -1,7 +1,7 @@
 {
-    "CoreAPIBaseUrl" : "https://api.bqecore.com/api",
-    "CoreIdentityBaseUrl" : "https://api-identity.bqecore.com/idp",    
-    "ClientID" : "Enter APP ClientID Here",
-    "RedirectURI" : "Enter APP RedirectURI Here",
+    "CoreAPIBaseUrl" : "https://sandbox-api.bqecore.com/api",
+    "CoreIdentityBaseUrl" : "https://sandbox-api-identity.bqecore.com/idp",    
+    "ClientID" : "RY0p5RSyyqbxB4QbLeORRid2FpihfFRm.apps.bqe.com",
+    "RedirectURI" : "http://localhost:4200/",
     "Scopes" : "read:core readwrite:core openid" 
 }
