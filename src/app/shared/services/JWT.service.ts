@@ -117,6 +117,7 @@ export class JWTService implements OnInit {
 
     private verifyJWTSingature(): boolean {
         try {
+            // implement RSA algorithm to validate Signature or use third party JS to do so.
             return true;
 
         } catch (ex) {
