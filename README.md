@@ -4,12 +4,13 @@
 
 ## Getting Started
   1. Clone the Core Angular Sample project on your local environment.
-  2. Go to Config.json and insert the  client_id and redirect_uri of your app. Please note the redirect_uri should point to the index.html        file of the project. As an example, if you are running Angular app on your localhost with port 4200, the redirect_uri will look like       http://localhost:4200. Note: The redirect_uri of your app should exactly match with the redirect_uri of your config file.
-  Example:
+  2. Go to Config.json and insert the  client_id and redirect_uri of your app. Please note the redirect_uri should point to the index.html        file of the project. As an example, if you are running Angular app on your localhost with port 4200, the redirect_uri will look like       http://localhost:4200. Note: The redirect_uri of your app should exactly match with the redirect_uri in your config file.
+ ### Example:
 
   | Registered Redirect URI| REDIRECT_URI PARAMETER PASSED TO /AUTHORIZE| Valid|
   |------------------------|--------------------------------------------|--    |
   |http://yourcallback.com/|http://yourcallback.com                     |No    |
+  |http://yourcallback.com/|http://yourcallback.com/                    |Yes   |
   
   
   3. Run npm install and then npm start to run the app
