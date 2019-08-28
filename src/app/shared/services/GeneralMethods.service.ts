@@ -8,16 +8,17 @@ import { AuthResponseModel } from '../models/AuthResponse.model';
 @Injectable()
 export class GeneralMethodsService {
 
-    configModel: Observable<ConfigModel>;
+    config: ConfigModel;
+
     constructor(private http: HttpClient) { }
 
     public getConfig(): Observable<ConfigModel> {
         try{
-            return this.http.get<ConfigModel>('assets/config.json').pipe(
-                tap( config => {
-                    // console.log(config);
-                })
-            );
+
+            return new Observable((observer) => {
+                observer.next(this.config);
+                observer.complete();                            
+            });
         } catch(ex) {
             throw new Error(ex);
         }

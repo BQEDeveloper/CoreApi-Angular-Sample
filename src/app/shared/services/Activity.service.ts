@@ -40,7 +40,7 @@ export class ActivityService {
           .subscribe(
             config => {
                 this.config = config;
-                this.apiHelperService.get(this.config.CoreAPIBaseUrl + '/activity/query?page=1,100&orderby=name', this.httpHeaders)
+                this.apiHelperService.get(this.config.CoreAPIBaseUrl + '/activity?page=0,100&orderby=name', this.httpHeaders)
                   .subscribe(
                       activities => {
                         observer.next(activities);
