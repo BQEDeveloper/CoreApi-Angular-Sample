@@ -16,7 +16,6 @@ import { ActivitiesComponent } from './activity/activities.component';
 import { UserInfoService } from './shared/services/UserInfoManager.service';
 import { ActivityComponent } from './activity/activity.component';
 import { JWTService } from './shared/services/JWT.service';
-import { ConfigModel } from './shared/models/Config.model';
 import { map, catchError } from 'rxjs/operators';
 import { Observable, ObservableInput, of } from 'rxjs';
 
