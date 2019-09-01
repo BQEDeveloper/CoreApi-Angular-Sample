@@ -42,6 +42,27 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Framework and Version
+####	Angular
+   * Angular CLI: 7.3.7
+   * Node: 10.15.3
+   * Angular: 7.2.11
+   
+   |Package| Version|
+  |------------------------|--------------------------------------------|
+  |@angular-devkit/architect        |0.13.7                     |
+  |@angular-devkit/build-angular    |0.13.7                     |
+  |@angular-devkit/build-optimizer  |0.13.7                     |
+  |@angular-devkit/build-webpack    |0.13.7                     |
+  |@angular-devkit/core             |7.3.7                      |
+  |@angular-devkit/schematics       |7.3.7                      |
+  |@angular/cli                     |7.3.7                      |
+  |@ngtools/webpack                 |7.3.7                      |
+  |@schematics/angular              |7.3.7                      |
+  |@schematics/update               |0.13.7                     |
+  |rxjs                             |6.3.3                      |
+  |typescript                       |3.2.4                      |
+  |webpack                          |4.29.0                     |
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
