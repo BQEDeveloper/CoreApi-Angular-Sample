@@ -45,7 +45,7 @@ export class GeneralMethodsService {
             const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             let randomString = '';
             for (let i = 0; i < length; i++) {
-                randomString += characters[Math.floor(Math.random() * characters.length) + 0];
+                randomString += characters[Math.floor(Math.random() * (characters.length - 1)) + 0];
             }
             return randomString;
 
