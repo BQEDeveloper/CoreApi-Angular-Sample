@@ -1,5 +1,4 @@
 {
-    "CoreAPIBaseUrl" : "https://api.bqecore.com/api",
     "CoreIdentityBaseUrl" : "https://api-identity.bqecore.com/idp",    
     "ClientID" : "Enter APP ClientID Here",
     "RedirectURI" : "Enter APP RedirectURI Here",

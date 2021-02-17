@@ -17,7 +17,7 @@ export class GeneralMethodsService {
 
             return new Observable((observer) => {
                 observer.next(this.config);
-                observer.complete();                            
+                observer.complete();
             });
         } catch(ex) {
             throw new Error(ex);
