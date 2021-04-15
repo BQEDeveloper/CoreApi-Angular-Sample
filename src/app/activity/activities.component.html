@@ -21,6 +21,7 @@
       <th>Cost Rate</th> 
       <th></th>                  
    </thead>
+   <tbody>
     <tr style="cursor:pointer" *ngFor="let activity of activities">
       <td [routerLink]="['/activity', activity.id]">{{activity.code}}</td>
       <td [routerLink]="['/activity', activity.id]">{{activity.description}}</td>
@@ -29,5 +30,6 @@
       <td [routerLink]="['/activity', activity.id]">{{activity.costRate}}</td>
       <td (click) = "deleteActivity(activity)">Delete</td>
     </tr>
+   </tbody>
   </table>
   <div *ngIf = "! activities" style="text-align:center;padding-top: 20px;">Loading...</div>
