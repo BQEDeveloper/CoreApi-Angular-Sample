@@ -54,6 +54,8 @@ export class AuthService {
                         this.config = config;
                         this.excahangeCodeForToken(code).subscribe(
                            authResponse => {
+                                if(authResponse?.endpoint?.endsWith('/'))
+                                    authResponse.endpoint = authResponse.endpoint.slice(0, -1);
                                 this.generalMethodsService.saveAuthResponse(authResponse);
                                 observer.next(authResponse);
                                 observer.complete();
